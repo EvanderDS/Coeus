@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>24334444_Lucene</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <lucene.base.path>D:/24334444_Lucene/lucene-9.12.0/modules</lucene.base.path> <!-- Define the base path for Lucene JARs -->
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-core</artifactId>
+            <version>9.12.0</version>
+            <scope>system</scope>
+            <systemPath>../lucene-9.12.0/modules/lucene-core-9.12.0.jar</systemPath> <!-- Use variable for the path -->
+        </dependency>
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-queryparser</artifactId>
+            <version>9.12.0</version>
+            <scope>system</scope>
+            <systemPath>../lucene-9.12.0/modules/lucene-queryparser-9.12.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-analyzers-common</artifactId>
+            <version>9.12.0</version>
+            <scope>system</scope>
+            <systemPath>../lucene-9.12.0/modules/lucene-analysis-common-9.12.0.jar</systemPath>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.0.0</version>
+                <configuration>
+                    <mainClass>org.example.Main</mainClass> <!-- Use this class -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

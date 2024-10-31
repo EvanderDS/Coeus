@@ -1,0 +1,5 @@
+File Name,P_5 Score,MAP Score,Recall Score
+BM25.txt,0.376,0.3459,0.2941
+Classic.txt,0.3058,0.2728,0.241
+LMDirichlet.txt,0.36,0.3181,0.2841
+TFIDF.txt,0.2827,0.2509,0.2222
